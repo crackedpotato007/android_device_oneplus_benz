@@ -1,5 +1,9 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus Nord CE4 (CPH2613_14.0.0.704(EX01)).
+#
+
+# IMS (system) - from eqs T1TBS33.32-8-9-7-2
+system_ext/app/QtiTelephony/QtiTelephony.apk|fde1b6b3752e2d2edbb773cb6c0d26df67437fc4
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt

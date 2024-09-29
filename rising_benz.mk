@@ -1,0 +1,3 @@
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 7 Gen 3" \
+    RISING_MAINTAINER="CrackedPotato"

@@ -51,4 +51,4 @@ $(call inherit-product, device/oneplus/sm7550-common/common.mk)
 $(call inherit-product, vendor/oneplus/benz/benz-vendor.mk)
 
 # Inherit Gapps
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
