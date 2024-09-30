@@ -139,7 +139,6 @@ oplus_chg.ko
 ufcs_class.ko
 oplus_chg_v2.ko
 oplus_chg_symbol.ko
-test-kit.ko
 qcom-spmi-temp-alarm.ko
 bcl_soc.ko
 cpu_voltage_cooling.ko
@@ -159,6 +158,7 @@ qcom_lpm.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
 leds-qpnp-vibrator-ldo.ko
+leds_aw210xx.ko
 memlat_vendor.ko
 cpufreq_stats_vendor.ko
 plh_vendor.ko
@@ -267,7 +267,6 @@ rmnet_aps.ko
 rmnet_sch.ko
 rmnet_wlan.ko
 msm_drm.ko
-msm-eva.ko
 msm_ext_display.ko
 sync_fence.ko
 msm_hw_fence.ko
