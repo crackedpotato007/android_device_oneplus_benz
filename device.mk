@@ -219,6 +219,13 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 
+# IR
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.oplus
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.oplus
