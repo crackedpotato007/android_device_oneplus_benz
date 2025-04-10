@@ -21,7 +21,30 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := CPH2613
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 7 Gen 3" \
+    RisingMaintainer="CrackedPotato"
 
+RISING_MAINTAINER := CrackedPotato
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := false
+
+# Whether to ship lawnchair launcher, false by default
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+WITH_GMS := true
+
+TARGET_CORE_GMS := true
+
+TARGET_CORE_GMS_EXTRAS := true
+
+RISING_PACKAGE_TYPE := "CORE"
+
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="CPH2613IN-user 15 TP1A.220905.001 U.R4T2.1c822c2_1_3 release-keys" \
     BuildFingerprint=OnePlus/CPH2613IN/OP5D3FL1:15/TP1A.220905.001/U.R4T2.1c822c2_1_3:user/release-keys \

@@ -11,6 +11,15 @@ odm/etc/acdbdata/acdb_cal.acdb
 # Audio firmware
 odm/firmware/aw882xx_acf.bin
 
+# Bluetooth (LHDC & LDAC)
+system/lib/liblhdc.so
+system/lib/liblhdcBT_enc.so
+system/lib/liblhdcv5.so
+system/lib/liblhdcv5BT_enc.so
+system/lib64/liblhdc.so
+system/lib64/liblhdcBT_enc.so
+system/lib64/liblhdcv5.so
+system/lib64/liblhdcv5BT_enc.so
 # Audio params
 odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat
 odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt

@@ -15,7 +15,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/resourcemanager.xml:$(TARGET_COPY_OUT_ODM)/etc/resourcemanager.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
-
+# Bluetooth Library Deps
+#PRODUCT_PACKAGES += \
+   # liblhdc \
+  #  liblhdcBT_enc \
+ #   liblhdcdec \
+#    liblhdcBT_dec
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
