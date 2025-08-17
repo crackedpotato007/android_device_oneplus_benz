@@ -9,6 +9,7 @@ cdsprm.ko
 core_hang_detect.ko
 cpu_voltage_cooling.ko
 ddr_cdev.ko
+debugcc-crow.ko
 debugcc-kalama.ko
 dmesg_dumper.ko
 dump_reason.ko
@@ -18,11 +19,13 @@ frpc-adsprpc.ko
 gh_tlmm_vm_mem_access.ko
 glink_pkt.ko
 glink_probe.ko
+gpucc-crow.ko
 gpucc-kalama.ko
 haptic.ko
 hvc_gunyah.ko
 i3c-master-msm-geni.ko
 last_boot_reason.ko
+leds-qpnp-vibrator-ldo.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
 llcc_perfmon.ko
@@ -40,7 +43,6 @@ msm_drm.ko
 msm_geni_serial.ko
 msm_lmh_dcvs.ko
 msm_memshare.ko
-msm_performance.ko
 msm_sharedmem.ko
 msm_show_epoch.ko
 msm_show_resume_irq.ko
@@ -86,6 +88,8 @@ qcom_q6v5_pas.ko
 qcom-spmi-adc5-gen3.ko
 qcom-spmi-temp-alarm.ko
 qdss_bridge.ko
+qfprom-sys.ko
+qpnp-amoled-regulator.ko
 qrtr-gunyah.ko
 qrtr-mhi.ko
 qrtr-smd.ko
@@ -93,6 +97,7 @@ qsee_ipc_irq_bridge.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
 qti-fixed-regulator.ko
+qti-glink-adc.ko
 qti-ocp-notifier.ko
 qti_qmi_cdev.ko
 qti_qmi_sensor_v2.ko
