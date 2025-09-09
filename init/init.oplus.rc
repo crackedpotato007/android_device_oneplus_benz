@@ -25,6 +25,9 @@ on post-fs-data
     mkdir /data/vendor/mmdump/adsp 0777 system system
     chmod 0777 /data/vendor/mmdump/adsp
 
+on property:persist.vendor.fingerprint.optical.sensorlocation=620::2529
+    setprop persist.vendor.fingerprint.optical.sensorlocation 540::2192
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
