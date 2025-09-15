@@ -14,6 +14,9 @@ persist.vendor.dpm.feature=11
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# IFAA
+sys.oplus.ifaa.model=ONEPLUS-R23871
+
 # Horae
 persist.sys.horae.enable=1
 

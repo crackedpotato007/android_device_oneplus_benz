@@ -19,10 +19,11 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/sm8550-common',
+    'device/oneplus/benz',
     'hardware/qcom-caf/sm8550',
     'hardware/qcom-caf/wlan',
     'hardware/oplus',
+    'vendor/oneplus/benz',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
@@ -79,6 +80,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
+        .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  0;'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v2.oplus.so'),
     'odm/bin/hw/vendor.oplus.hardware.charger-V6-service': blob_fixup()
@@ -127,11 +130,12 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8550-common',
+    'benz',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
+    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
