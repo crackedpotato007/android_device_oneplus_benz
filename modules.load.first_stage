@@ -3,6 +3,7 @@ bcl_pmic5.ko
 bwmon.ko
 c1dcvs_scmi.ko
 c1dcvs_vendor.ko
+camcc-crow.ko
 camcc-kalama.ko
 cdt_integrity.ko
 clk-rpmh.ko
