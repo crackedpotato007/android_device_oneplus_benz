@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from benz device
 $(call inherit-product, device/oneplus/benz/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_benz
+PRODUCT_NAME := infinity_benz
 PRODUCT_DEVICE := benz
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -29,3 +29,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2613 \
     SystemDevice=OP5D3FL1 \
     SystemName=CPH2613
+
+INFINITY_MAINTAINER := CrackedPotato
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_QUICK_TAP := true
