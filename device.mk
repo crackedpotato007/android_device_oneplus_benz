@@ -223,12 +223,8 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    sys.brightness.disable_gamma_conversion=true \ 
-    ro.product.marketname=OnePlus Nord CE4 \ 
-    ro.infinity.soc=Snapdragon 7 Gen 3 \ 
-    ro.infinity.battery=5500 mAh \ 
-    ro.infinity.display= 1080 x 2412, 120 Hz \ 
-    ro.infinity.camera=50MP + 8MP
+    sys.brightness.disable_gamma_conversion=true \
+
 
 # IR
 PRODUCT_COPY_FILES += \
