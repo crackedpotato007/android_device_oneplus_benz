@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.crow
 
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio/primary-hal
 CONFIG_HAL_SRC_DIR := $(AUDIO_HAL_DIR)/configs/crow
 CONFIG_PAL_SRC_DIR := $(AUDIO_HAL_DIR)/../pal/configs/crow
@@ -414,11 +418,11 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/oneplus/benz/vintf/framework_manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := \
+DEVICE_MANIFEST_FILE += \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa.xml \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa_extn.xml \
-    $(LOCAL_PATH)/vintf/manifest_crow.xml \
-    $(LOCAL_PATH)/vintf/network_manifest.xml
+    $(DEVICE_PATH)/vintf/manifest_crow.xml \
+    $(DEVICE_PATH)/vintf/network_manifest.xml
 
 ODM_MANIFEST_FILES := \
     $(LOCAL_PATH)/vintf/network_manifest_odm.xml
