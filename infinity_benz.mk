@@ -11,8 +11,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from benz device
 $(call inherit-product, device/oneplus/benz/device.mk)
 
-# Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_NAME := infinity_benz
 PRODUCT_DEVICE := benz
@@ -38,3 +36,7 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_HAS_UDFPS := true
+BYPASS_CHARGE_SUPPORTED := true
+
+# Inherit some common infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
