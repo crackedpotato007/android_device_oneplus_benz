@@ -293,6 +293,9 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_enable)
 
+#Gamebar
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
 # QSPA
 PRODUCT_PACKAGES += \
     vendor.qti.qspa-service
