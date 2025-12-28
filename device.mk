@@ -30,6 +30,8 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
@@ -295,7 +297,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_enable)
 
 #Gamebar
-$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+#$(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
 # QSPA
 PRODUCT_PACKAGES += \
