@@ -227,8 +227,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    sys.brightness.disable_gamma_conversion=true \
-
+    sys.brightness.disable_gamma_conversion=true 
 
 # IR
 PRODUCT_COPY_FILES += \
@@ -455,6 +454,3 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/benz/benz-vendor.mk)
-
-# Private keys
--include vendor/infinity-priv/keys/keys.mk
