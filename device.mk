@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
-
+include frameworks/base/packages/SettingsLib/common.mk
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.crow
 
+
+#SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
@@ -297,7 +300,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_enable)
 
 #Gamebar
-#$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
 # QSPA
 PRODUCT_PACKAGES += \
