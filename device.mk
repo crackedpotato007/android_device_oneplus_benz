@@ -277,7 +277,8 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
-    WifiResTarget
+    WifiResTarget \
+    DozeAodResTarget
 
 # Partitions
 PRODUCT_PACKAGES += \
